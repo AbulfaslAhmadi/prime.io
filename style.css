@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d1117;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: #ccdae7;
+    margin: 10rem 0 0;
+    font-size: min(5vw, 4rem);
+}
+
+span {
+    background-image: linear-gradient(90deg, #079de0, #3aecba);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    width: 90%;  
+}
+
+.two {
+    margin: 7rem 0 3rem;
+    display: flex;
+}
+
+.response {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #ccdae7;
+}
+
+
+
+.uInput {
+    padding: 2rem 4rem;
+    border: 0px solid;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+
+    transition: all 200ms;
+}
+
+
+.uBtn {
+    padding: 2rem 3rem;
+    border-radius: 0 10px 10px 0;
+    border: 0px solid;
+    background: #079de0;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+
+    transition: all 200ms;
+}
+
+
+.uInput:focus {
+    padding: 2rem 8rem;
+}
+
+.uBtn:hover {
+    color: #0d1117;
+}
+
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 5rem 0 0;
+        width: 90%;
+    }
+
+    .uInput {
+        padding: 1.5rem 10vw;
+        font-size: 1rem;
+    }
+
+    .uBtn {
+        padding: 1rem 5vw;
+        font-size: 1rem;
+    }
+
+    .uInput:focus {
+        padding: 1.5rem 10vw;
+    }
+
+    .two {
+        margin: 6rem 0 3rem;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 9vw;
+    }
+
+    .response {
+        font-size: 7vw;
+    }
+    
+    .uInput {
+        padding: 1.5rem 5vw;
+    }
+
+    .uBtn {
+        padding: 1rem 2vw;
+    }
+
+    .uInput:focus {
+        padding: 1.5rem 5vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .uInput {
+        padding: 0.5rem 2vw;
+    }
+
+    .uBtn {
+        padding: 0.5rem 1vw;
+    }
+
+    .uInput:focus {
+        padding: 0.5rem 2vw;
+    }
+}
